@@ -1,0 +1,31 @@
+.comment-container {
+  .comment-author {
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  .comment-author > span {
+    color: rgb(87, 111, 118);
+  }
+  .comment-content {
+    margin-left: 1rem;
+  }
+  .vote-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 16px;
+    background-color: rgb(220, 220, 220);
+    width: fit-content;
+  }
+  .reply-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}

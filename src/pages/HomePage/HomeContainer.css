@@ -1,0 +1,30 @@
+.home-container {
+  .filter {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    border: solid 1px rgb(204, 204, 204);
+  }
+  .filter-item {
+    display: flex;
+    gap: 1rem;
+    .filter-select {
+      font-size: 20px;
+    }
+  }
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .classic-item, .compact-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+}

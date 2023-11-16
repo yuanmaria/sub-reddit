@@ -1,0 +1,72 @@
+.detail-container {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  border: solid 1px rgb(204, 204, 204);
+  gap: 1rem;
+  flex-direction: column;
+  .detail-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-title {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .detail-title > span {
+    color: rgb(87, 111, 118);
+  }
+  .author {
+    color: rgb(42, 60, 66);
+    font-size: 12px;
+  }
+  .content-title {
+    font-size: 32px;
+    color: rgb(15, 26, 28);
+    font-weight: 700;
+  }
+  .video-container {
+    border-radius: 16px;
+    background-color: #000;
+  }
+  .detail-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    .vote-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2px;
+      padding: 2px 4px;
+      border-radius: 16px;
+      background-color: rgb(220, 220, 220);
+      width: fit-content;
+    }
+    .comment-counter {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      color: rgb(135, 138, 140);
+    }
+  }
+  .comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .comment-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .embed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+  }
+}

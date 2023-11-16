@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import "./App.css";
+import routes from "./routes";
 
-function App() {
+export default function App() {
+  const navigate = useNavigate();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="header">
+        <div className="header-container">
+          <div className="header-title" onClick={(_e)=> navigate('..')}>
+            <h1>Startled Cats</h1>
+            <div className="header-subtitle">r/StartledCats</div>
+          </div>
+        </div>
+      </div>
+      <div className="app-container">
+        <Routes>
+            {routes.map((route, index) => (
+              <Route key={index} {...route} />
+            ))}
+        </Routes>
+      </div>
     </div>
   );
 }
-
-export default App;
